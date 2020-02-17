@@ -78,7 +78,7 @@ int main(int argc, char **argv)
    * away the oldest ones.
    */
 // %Tag(SUBSCRIBER)%
-  auto sub = n->create_subscription<std_msgs::msg::String>("chatter", 1000, chatterCallback);
+  auto sub = n->create_subscription<std_msgs::msg::String>("chatter", chatterCallback);
   //auto sub = n->create_subscription<std_msgs::msg::String>("chatter", rclcpp::SensorDataQoS(), chatterCallback);
 // %EndTag(SUBSCRIBER)%
 
